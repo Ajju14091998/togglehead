@@ -1,0 +1,163 @@
+.home-section2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 50px 80px;
+  background: #ffffff;
+  gap: 40px;
+  flex-wrap: wrap; /* fallback for narrower screens */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.left-panel {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding-right: 40px;
+}
+
+.left-panel h2 {
+  font-size: 24px;
+  color: #083d77;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.left-panel p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.exam-list {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 40px;
+  gap: 20px;
+}
+
+.exam-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  min-width: 200px;
+}
+
+.calendar-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.exam-text h4 {
+  font-size: 16px;
+  color: #083d77;
+  margin: 0;
+}
+
+.exam-text p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .home-section2 {
+    flex-direction: column;
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .left-panel {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    padding-right: 0;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+
+  .exam-list {
+    padding-left: 0;
+    justify-content: left;
+    gap: 20px;
+  }
+
+  .exam-item {
+    justify-content: left;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .home-section2 {
+    padding: 30px 20px;
+  }
+
+  .left-panel h2 {
+    font-size: 20px;
+  }
+
+  .exam-item {
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+
+  .calendar-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .exam-text h4,
+  .exam-text p {
+    text-align: left;
+  }
+}
+
+
+/* Tablet View: 768px - 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-section2 {
+    flex-direction: column;
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .left-panel {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    padding-right: 0;
+    padding-bottom: 20px;
+    text-align: left; /* keep text left-aligned */
+  }
+
+  .left-panel h2 {
+    font-size: 22px;
+  }
+
+  .exam-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .exam-item {
+    flex: 1 1 45%;
+    min-width: 200px;
+    justify-content: flex-start;
+  }
+
+  .exam-text h4,
+  .exam-text p {
+    text-align: left;
+  }
+}

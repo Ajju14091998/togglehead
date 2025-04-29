@@ -1,0 +1,111 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.subscribe-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px 0px 60px;
+  background: #fff;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.subscribe-content {
+  max-width: 500px;
+}
+
+.subscribe-content h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #12406F;
+  margin-bottom: 10px;
+}
+
+.subscribe-content p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.email-input {
+  padding: 10px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  min-width: 260px;
+  flex: 1;
+}
+
+.subscribe-button {
+  background-color: #12406F;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.subscribe-image img {
+  max-width: 350px;
+  width: 100%;
+}
+
+/* ------------------------------
+   ✅ Responsive Design Section
+   ------------------------------ */
+
+/* Tablets (iPad, iPad Pro) */
+@media (max-width: 1024px) {
+  .subscribe-section {
+    flex-direction: column-reverse;
+    padding: 40px 40px 0px 40px;
+    text-align: left;
+  }
+
+  .subscribe-content {
+    max-width: 100%;
+  }
+
+  .subscribe-form {
+    justify-content: left;
+  }
+
+  .subscribe-image img {
+    max-width: 300px;
+  }
+}
+
+/* Mobiles (phones) */
+@media (max-width: 768px) {
+  .subscribe-section {
+    padding: 30px 20px 0px 20px;
+    gap: 30px;
+  }
+
+  .email-input {
+    min-width: 100%;
+  }
+
+  .subscribe-button {
+    width: 80%;
+    justify-content: left;
+  }
+
+  .subscribe-image img {
+    max-width: 250px;
+  }
+}
