@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -125,3 +126,6 @@ routes/: Manages application routing with Router.js.      \
 App.js: Root component of the application.      \
 index.css: Global styles for the project.      \
 
+=======
+# togglehead
+>>>>>>> cff912a2928cf78147f62704090095850d3799dc
